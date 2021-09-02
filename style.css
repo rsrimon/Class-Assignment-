@@ -1,0 +1,474 @@
+/* ======== Default Style CSS ======== */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.bg-1{
+    background-color: #f7f7f7;
+}
+.bg-2{
+    background-color: #fff;
+}
+body,h1,h2,h3,h4,h5,h6,p,span,a{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ======== Header Section CSS ======== */
+
+.header{
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.header-logo{
+    float: left;
+    width: 30%;
+}
+.logo-image{
+    width: 100px;
+}
+
+/* ======== Menu Section CSS ======== */
+
+.header-menu{
+    float: right;
+    width: 70%;
+}
+.header-menu ul li{
+    display: inline-block;
+}
+.header-menu ul li a{
+    display: block;
+    color: #000;
+    padding: 0px 15px;
+    line-height: 60px;
+}
+
+/* ======== Banner Section CSS ======== */
+
+.banner{
+    background-image: url(./Image/kobu-agency-IWLR561-Yb-MY-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+    position: relative;
+    z-index: 1;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: -1;
+}
+.banner-contant h3{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+}
+.banner-contant h1{
+    color: #fff;
+    font-size: 55px;
+    margin: 30px 0;
+}
+.banner-contant span a{
+    display: inline-block;
+    color: #7d7d7d;
+    background-color: #fff;
+    padding: 20px 35px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 5px;
+    transition: .5s;
+}
+.banner-contant span a:hover{
+    color: #fff;
+    background-color: #dca034;
+}
+
+/* ======== Plan Section CSS ======== */
+
+.plan{
+    padding: 50px 0;
+}
+.plan-contant h1{
+    color: #000;
+    font-size: 55px;
+    font-weight: 500;
+}
+.plan-contant p{
+    color: rgba(0, 0, 0, 0.863);
+    margin-top: 30px;
+}
+.plan-item{
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+    background-color: #fff;
+    margin-top: 60px;
+    box-shadow: 4px 4px 30px 0 rgba(98, 120, 223, .15);
+}
+.plan-item:nth-child(3){
+    margin-right: 0;
+}
+.plan-heading{
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+    transition: .5s;
+}
+.plan-heading h4 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.plan-heading h1 {
+    font-size: 50px;
+    background-color: #f5f5f5;
+    padding: 0 10px;
+    transition: .5s;
+}
+.plan-heading h1 span {
+    font-size: 20px;
+}
+.plan-heading h5 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+.plan-heading p {
+    font-size: 18px;
+}
+.plan-contant{
+    padding: 20px;
+}
+.plan-contant ul li {
+    color: #7d7d7d;
+    margin: 20px 0;
+    font-weight: 400;
+    font-size: 18px;
+}
+.plan-contant ul li span {
+    color: #e79230;
+    font-size: 25px;
+    display: inline-block;
+    width: 45px;
+}
+.plan-btn{
+    margin-top: 35px;
+}
+.plan-btn span a{
+    display: inline-block;
+    color: #7d7d7d;
+    background-color: #fff;
+    padding: 20px 35px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 5px;
+    box-shadow: 4px 4px 30px 0 rgba(98, 120, 223, .3);
+    transition: .5s;
+}
+.plan-item:hover .plan-btn span a{
+    color: #fff;
+    background-color: #e79230;
+}
+.plan-item:hover .plan-heading{
+   color: #fff;
+    background-color: #e79230;
+}
+.plan-item:hover .plan-heading h1{
+    color: #fff;
+    background-color: #e79230;
+}
+
+/* ======== Team Section CSS ======== */
+
+.team{
+    padding: 50px 0;
+}
+.team-contant h1 {
+    font-size: 38px;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+.team-members{
+    margin: 30px 0;
+}
+.team-member{
+    float: left;
+    width: 23%;
+    margin-right: 2%;
+    border: 5px double #e79230;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 30px 0 rgba(98, 120, 223, .4);
+}
+.team-member:nth-child(4){
+    margin-right: 0;
+}
+.tm-bio h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 20px;
+}
+.tm-bio p {
+    color: #7d7d7d;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 20px 20px;
+}
+
+/* ======== Subscribe Section CSS ======== */
+
+.subscribe{
+    padding: 100px;
+}
+.subscribe-contant p{
+    margin-bottom: 60px;
+}
+.subscribe-contant h1 {
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.default-input{
+    width: 450px;
+    padding: 20px;
+    font-size: 20px;
+    border: 2px solid #b6c118;
+    border-radius: 10px;
+    outline: none;
+    transition: .3s;
+}
+.default-input:focus{
+    border: 2px solid #375a7f;
+    box-shadow: 4px 4px 30px 0 rgba(98, 120, 223, .3);
+}
+.subscribe-form span a{
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #aa972c;
+    color: #fff;
+    padding: 20px 80px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: .3s;
+    border: 1px transparent;
+}
+.subscribe-form span a:hover{
+    color: #bd954c;
+    background-color: #fff;
+    border: 1px solid #817842;
+    box-shadow: 4px 4px 30px 0 rgba(98, 120, 223, .14);
+}
+
+/* ======== About Section CSS ======== */
+
+.about-heading h1 {
+    font-size: 55px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.about-left{
+    float: left;
+    width: 39%;
+}
+.about-right{
+    float: right;
+    width: 59%;
+}
+.about-contant h4 {
+    color: #535354;
+    font-size: 18px;
+    margin: 20px 0;
+}
+.about-contant span {
+    margin-right: 10px;
+}
+.about-contant p {
+    font-size: 17px;
+    line-height: 26px;
+}
+
+/* ======== Testimonial Section CSS ======== */
+
+.testimonial-heading{
+    padding: 50px 0;
+}
+.testimonial-heading p{
+    margin: 20px;
+}
+.testimonial-heading h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 50px 0;
+}
+.testimonial-contant{
+    margin-bottom: 80px;
+}
+.tc-item {
+    float: left;
+    width: 31%;
+    margin-right: 2%;
+    box-sizing: border-box;
+    border: 2px solid #bfc1cc;
+    padding-bottom: 30px;
+}
+.tc-item:nth-child(3){
+    margin-right: 0;
+}
+.tc-item-title {
+    background-color: #fff;
+    padding: 30px 50px;
+    margin-bottom: 30px;
+    position: relative;
+    box-shadow: 4px 4px 30px 0 rgba(98, 120, 223, .25);
+}
+.tc-item-title::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 45%;
+    bottom: -5%;
+    border-style: solid;
+    border-width: 15px 17.5px 0 17.5px;
+    border-color: #ffffff transparent transparent transparent;
+}
+.tc-item-title p {
+    color: #7d7d7d;
+    font-size: 18px;
+    line-height: 35px;
+    position: relative;
+}
+.tc-item-title p::before {
+    content: "\f10d";
+    position: absolute;
+    font-family: "FontAwesome";
+    top: -3px;
+    left: -16px;
+    font-size: 72px;
+    opacity: .15;
+}
+.tc-item-bio{
+    width: 220px;
+    margin: auto;
+}
+.tc-item-bio h4 {
+    font-size: 19px;
+    font-weight: 500;
+    padding-top: 26px;
+}
+.tc-item-bio p{
+    color: #7d7d7d;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.tc-item-image {
+    float: left;
+    width: 80px;
+    height: 80px;
+    border: 10px solid #aa972c;
+    margin-right: 18px;
+    margin-top: 10px;
+}
+
+/* ======== Contact Section CSS ======== */
+
+.contact-text{
+    width: 700px;
+    margin: auto;
+    padding: 80px 0;
+}
+.contact-heading h5 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.contact-heading p {
+    color: #7d7d7d;
+    font-size: 19px;
+    margin-bottom: 50px;
+}
+.w-100{
+    width: 100%;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 20px 0 rgba(43, 54, 102, 0.25);
+}
+.name{
+    float: left;
+    width: 48%;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    margin: 20px 0;
+    box-shadow: 4px 4px 20px 0 rgba(43, 54, 102, 0.25);
+}
+.phone{
+    float: right;
+    width: 48%;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    margin: 20px 0;
+    box-shadow: 4px 4px 20px 0 rgba(43, 54, 102, 0.25);
+}
+.contact-form span a{
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #aa972c;
+    color: #fff;
+    padding: 15px 80px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px transparent;
+    transition: .3s;
+    box-shadow: 4px 4px 20px 0 rgba(43, 54, 102, 0.25);
+}
+.contact-form span a:hover{
+    color: #bd954c;
+    background-color: #fff;
+    border: 1px solid #817842;
+    box-shadow: 4px 4px 20px 0 rgba(98, 120, 223, .14);
+}
+
+/* ======== Footer Section CSS ======== */
+
+.footer p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
